@@ -1,0 +1,44 @@
+.carrusel-contenedor {
+    position: relative;
+    width: 600px; /* Ajusta el ancho según tus necesidades */
+    overflow: hidden; /* Oculta las imágenes que no están visibles */
+    margin: 20px auto; /* Centra el carrusel en la página */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carrusel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Animación suave al cambiar de imagen */
+}
+
+.carrusel-imagen {
+    width: 100%; /* Cada imagen ocupa el ancho del contenedor */
+    flex-shrink: 0; /* Evita que las imágenes se encojan */
+}
+
+.carrusel-boton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    padding: 10px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.carrusel-boton:hover {
+    opacity: 1;
+}
+
+.anterior {
+    left: 10px;
+}
+
+.siguiente {
+    right: 10px;
+}
