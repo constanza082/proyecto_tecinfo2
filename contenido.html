@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoScan - Huella de Carbono</title>
+  <link rel="stylesheet" href="contenido.css">
+</head>
+<body>
+  <header>
+    <h1>🌱 EcoScan</h1>
+    <p>Escanea productos y lugares para conocer su huella de carbono aumentada</p>
+  </header>
+
+  <main>
+    <section class="scanner">
+      <label for="scanInput">🔍 Escanea un producto o lugar:</label>
+      <input type="text" id="scanInput" placeholder="Ej. Leche orgánica, Parque central...">
+      <button onclick="escanear()">Escanear</button>
+    </section>
+
+    <section id="resultado" class="resultado oculto">
+      <h2>Resultado del Escaneo:</h2>
+      <div class="card" id="cardResultado">
+        <p class="nombre"></p>
+        <p class="huella"></p>
+        <p class="impacto"></p>
+      </div>
+      <button onclick="resetear()">🔄 Nuevo escaneo</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 EcoScan. Hecho con conciencia ambiental 🌍</p>
+  </footer>
+
+  <script src="contenido.js"></script>
+</body>
+</html>
